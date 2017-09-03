@@ -1,6 +1,8 @@
 @import '~antd/dist/antd.less';
 @icon-url: '~./assets/iconfont/iconfont';
 
-// 必须使用~ 否则路径就指向 ../node_modules/antd/lib/style/core/assets/iconfont/iconfont.eot
-// 个人结论就是webpack版本的问题
 // @icon-url: './assets/iconfont/iconfont';
+/*
+  1、必须使用~ 否则路径就指向 ../node_modules/antd/lib/style/core/assets/iconfont/iconfont.eot
+  2、没有指定resolve.module只能指向node_modules，所以字体库只能在当前目录
+*/
